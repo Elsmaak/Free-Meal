@@ -1,0 +1,179 @@
+.loaderHeader {
+    z-index: 99;
+    top: 0;
+}
+
+.serachBar {
+    height: 140px;
+}
+
+.serachBtn {
+    right: 10px;
+    top: 0;
+    transform: translateY(20%);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navBar {
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    opacity: 0;
+}
+
+.navBar i {
+    cursor: pointer;
+}
+
+.navBar img {
+    width: 60px;
+}
+
+.navList footer {
+    max-width: 220px;
+}
+
+.navList {
+    background-color: #0D0D0D;
+    color: white;
+    margin-bottom: 0;
+}
+
+.navList a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 15px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navList ul li {
+    top: 300px;
+}
+
+.layerItem {
+    cursor: pointer;
+}
+
+.layerItem .layOut {
+    top: 420px;
+    transition: all 0.4s;
+}
+
+.layerItem:hover .layOut {
+    top: 0;
+}
+
+.recipes.btn-lighblue {
+    --bs-btn-color: #055160;
+    --bs-btn-bg: #cff4fc;
+    --bs-btn-border-color: #b6effb;
+    --bs-btn-hover-bg: #043741;
+    --bs-btn-hover-color: #f5deb3;
+    --bs-btn-hover-border-color: #043741;
+    --bs-btn-active-bg: rgb(5, 75, 93);
+    cursor: text;
+    -webkit-user-select: text;
+    margin: 10px 5px;
+}
+
+.recipes.btn-lighblue::selection {
+    background-color: #f5deb3;
+}
+
+.backToHome {
+    left: 60%;
+}
+
+.ingredients,
+.area {
+    cursor: pointer;
+}
+
+.form-floating .form-control {
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+.form-floating .form-control:focus {
+    background-color: rgb(62, 62, 62);
+}
+
+.form-control~label {
+    color: wheat;
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label {
+    color: wheat;
+}
+
+.form-floating>.form-control:not(:placeholder-shown)~label::after {
+    background-color: lightslategray;
+}
+
+
+.loader {
+    width: 40px;
+    height: 26px;
+    --c: no-repeat linear-gradient(#000 0 0);
+    background:
+        var(--c) 0 100%,
+        var(--c) 50% 100%,
+        var(--c) 100% 100%;
+    background-size: 8px calc(100% - 4px);
+    position: relative;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    left: 0;
+    top: 0;
+    animation:
+        l3-1 1.5s linear infinite alternate,
+        l3-2 0.75s cubic-bezier(0, 200, .8, 200) infinite;
+}
+
+@keyframes l3-1 {
+    100% {
+        left: calc(100% - 8px)
+    }
+}
+
+@keyframes l3-2 {
+    100% {
+        top: -0.1px
+    }
+}
+
+@media (max-width:767px) {
+    .mainCont {
+        width: 60%;
+    }
+
+    .backToHome {
+        top: 20px;
+        left: 20%;
+    }
+}
+
+@media (min-width:767px) and (max-width:1050px) {
+    .backToHome {
+        left: 30%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1140px) {
+    .mainCont {
+        width: 75%;
+    }
+}

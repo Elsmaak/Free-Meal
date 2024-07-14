@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="bg-black overflow-hidden">
+        <div
+            class="loaderHeader d-flex align-items-center justify-content-center position-fixed start-0 bottom-0 end-0 bg-white">
+            <div class="loader"></div>
+        </div>
+        <nav class="navBar position-fixed bg-black d-flex ">
+            <div
+                class="navList d-flex flex-column justify-content-between py-4 px-3">
+                <ul
+                    class="list-unstyled mb-0 overflow-hidden">
+                    <li class="position-relative">
+                        <a id="search">
+                            Search
+                        </a>
+                    </li>
+                    <li class="position-relative">
+                        <a id="categories">
+                            Categories
+                        </a>
+                    </li>
+                    <li class="position-relative">
+                        <a id="area">
+                            Area
+                        </a>
+                    </li>
+                    <li class="position-relative">
+                        <a id="ingredients">
+                            Ingredients
+                        </a>
+                    </li>
+                    <li class="position-relative">
+                        <a id="contactUs">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <footer>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </footer>
+            </div>
+
+            <div
+                class="d-flex flex-column justify-content-between p-3 text-center bg-white">
+                <img src="logo.png" class="logo" alt="Logo">
+                <div class>
+                    <i class="closeBtn fa-solid fa-xmark d-none fa-3x"></i>
+                    <i class="openBtn fa-solid fa-sliders fa-3x"></i>
+                </div>
+                <footer class>
+                    <i class="fa-solid fa-share-nodes fs-4 d-block mb-2"></i>
+                    <i class="fa-solid fa-globe fs-4"></i>
+                </footer>
+            </div>
+        </nav>
+        <section>
+            <div class="mainCont container py-5">
+                <div class="serachBar d-none row gy-4">
+                    <div class="col-lg-6">
+                        <div class="form-floating mb-3 position-relative">
+                            <input type="text" class="form-control"
+                                id="serachByName" name="serachByName"
+                                placeholder="serachByName">
+                            <label for="serachByName">Serach By Name</label>
+                            <button
+                                class="serachBtn py-2 btn btn-dark position-absolute">Serach</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control"
+                                id="serachByFirstLetter"
+                                name="serachByFirstLetter"
+                                placeholder="serachByFirstLetter" maxlength="1">
+                            <label for="serachByFirstLetter">Serach By First
+                                Letter</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4" id="myData">
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
